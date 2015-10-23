@@ -1,0 +1,27 @@
+Step 1: assign the value changeme to a variable named password
+Step1.1: initiate a variable to value 0
+Step2 = taking user input
+Step2.1: increment the value of this variable by 
+Step3= use if  condition to check if the userinput matches the define password
+Step3.1: check if the user attempts are lessorequal <= 5, then let him retry. If > 5 access de
+
+
+password = input("Type in a password")
+attempt = 0
+if password == ("changeme"):
+    print ("successful")
+else:
+     print ("failed attempt 1, please try again")
+attempt = attempt + 1
+
+
+password="cahngeme"
+attempt = 0
+
+while attempt<=5
+password = input("Type in a password")
+if password == ("changeme"):
+    print ("successful")
+else:
+     print ("failed attempt 1, please try again")
+     attempt = attempt + 1
