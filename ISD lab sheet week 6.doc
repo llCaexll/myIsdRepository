@@ -1,0 +1,89 @@
+1.	Consider the class:
+
+class Person :
+	def _ _init_ _(self, firstName, lastName ) :
+	self._name = lastName + ", " + firstName
+
+If an object is constructed as
+harry = Person("Harry", "Morgan") what is the value of its instance variable _name?
+
+Answer :
+Value of _name is Morgan,Harry. This is because in constructor of object of type Person “Harry” is passed as first argument and “Morgan” is passed as second argument. So both of these arguments initialise firstName and lastName of person respectively. And  _name is concatenation of lastName and “,” and fisstName so the result is “Morgan,Harry”.
+
+ 
+
+2.	Provide an implementation for a Person constructor so that after the call p = Person() the _name instance variable of p is "unknown"
+Answer:
+
+class Person :
+    _name=""
+    def __init__(self,firstName,lastName):
+        self._name = lastName + "," + firstName
+    def __init__(self):
+        self._name="Unknown"
+	
+p= Person() 
+print(p._name)
+ 
+
+
+
+3.
+A simulated cash register that tracks the item count and the total amount looks like this:  due
+
+3a.	Add comments 1 to 5 to explain the above code as requested  
+
+class CashRegister :
+# default constructor of object which going to set itemCount and     totalPrice to zero initially. 
+   def __init__(self) :
+      self._itemCount = 0
+      self._totalPrice = 0.0
+      
+#additem method take price of item as input and it add this price to total price and increase the count of item by 1.
+   def addItem(self, price) :
+      self._itemCount = self._itemCount + 1
+      self._totalPrice = self._totalPrice + price 
+      
+#this method returns the value of totalPrice of items.
+   def getTotal(self) :
+      return self._totalPrice
+      
+ 
+#this method returns the count of items.    
+def getCount(self) :
+      return self._itemCount
+
+#this method set value of itemCount and totalPrice to 0
+   def clear(self) :
+      self._itemCount = 0
+      self._totalPrice = 0.0
+
+3b.	What are the values of register1._itemCount, register1._totalPrice, register2._itemCount, and register2._totalPrice after these statements?
+register1 = CashRegister()
+After call to this method a new object is created of type CashRegister and during creation of object default constructor is called as no argument is passed so the values of _totalPrice and _itemCount is 0.
+
+register1.addItem(0.90)
+Call to  addItem method add price to total price and increase the count of item by one so after call to this method _totalPrice of object register1 became 0.90 and _itemCount became equal to 1.
+
+register1.addItem(0.95)
+Call to  addItem method add price to total price and increase the count of item by one so after call to this method _totalPrice of object register1 became 0.90+0.95 = 1.85 and _itemCount became equal to 2.
+
+register2 = CashRegister()
+After call to this method a new object is created of type CashRegister and during creation of object default constructor is called as no argument is passed so the values of _totalPrice and _itemCount is 0.
+
+register2.addItem(1.90)
+Call to  addItem method add price to total price and increase the count of item by one so after call to this method _totalPrice of object register2 became 1.90 and _itemCount became equal to 1.
+
+
+
+3c.	Implement a method getPounds of the CashRegister class that yields the amount of the total sale as a sterling value without the pence.
+
+def getPounds(self):
+       return self._totalPrice*0.01
+ 
+
+3d.	Define and implement a method giveChange(self, payment) for the CashRegister class that gives change for the provided payment. 
+
+def giveChange(self,payment):
+        return payment-self._totalPrice
+           
