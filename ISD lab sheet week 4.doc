@@ -1,0 +1,78 @@
+ISD lab sheet week 4
+1.	Assume the following list:   a = [66.25, 333, 333, 1, 1234.5]
+
+If you perform the following operations on the list:
+
+a.insert(2, -1)
+a.append(333)
+
+What will the list look like?
+
+
+Now you perform: 
+a.index(333)
+What will the output of this operation be?
+
+
+
+a.remove(333)
+What will the list look like?
+
+
+a.reverse()
+ What will the list look like?
+
+
+>>> a.sort()
+What will the list look like?
+
+2.
+	Write a short program to create a list of squares for numbers up to 10. 
+Start with an empty list called squares and append squares of numbers from 0 up to 10.
+Print the contents of your list.
+ 
+
+
+3.
+nums = []
+for x in [1,2,3]:
+         for y in [3,1,4]:
+                if x != y:
+                        nums.append((x, y))
+ nums
+
+What is the output from above? 
+[(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+
+
+
+
+4.
+Create a program that will keep track of items for a shopping list. 
+The program should start with an empty list and keep asking for new items until nothing is entered (no input followed by enter/return key). 
+The program should then display the full shopping list.
+
+items=list()
+while True:
+    item=input("Enter item : ")
+    if len(item)==0:
+        break
+    items.append(item)
+print("List of items is : ")
+print(items)
+ 
+
+5.	Write a program that will ask the user to enter two short sentences and then: 
+
+-	Concatenate the two sentences into one long sentence 
+-	Split the sentence into a list of words
+-	Sort the words in alphabetical order and print them out
+-	Print the total number of words contained in your list
+
+-	Create a dictionary that will store each word together with the count of the occurrence of each word in your sentence. 
+  
+-	Print each item from the dictionary
+	
+
+ 
+
