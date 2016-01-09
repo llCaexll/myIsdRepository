@@ -1,0 +1,44 @@
+	ISD lab sheet week 7
+For the practical part of this lab please save the Python programs that you create and take screenshots of the execution (evaluation) of your programs.
+
+1a. Write a class “Student” with a state that stores information about the students surname, last name, student number and course. The behaviour of the “Student” class should enable a student object to get and set each of the Student class variables and to print out all of the Student’s information.
+
+1b. Write a program with a main function that imports the Student class, creates a student object and prints and changes some of the information (like first name, last name) of the student object. 
+
+
+2.
+A simulated cash register that tracks the item count and the total amount looks like this:  due
+
+class CashRegister :
+   
+   def __init__(self) :
+      self._itemCount = 0
+      self._totalPrice = 0.0
+      
+   
+   def addItem(self, price) :
+      self._itemCount = self._itemCount + 1
+      self._totalPrice = self._totalPrice + price 
+      
+   
+   def getTotal(self) :
+      return self._totalPrice
+
+   def getCount(self) :
+      return self._itemCount
+
+   def clear(self) :
+      self._itemCount = 0
+      self._totalPrice = 0.0
+
+   def giveChange(self, payment) :
+      return payment-self._totalPrice
+      
+
+
+
+2a.	
+
+Write a TestRegister program to test the addItem, getTotal, getCount and giveChange methods of the CashRegister class
+
+
