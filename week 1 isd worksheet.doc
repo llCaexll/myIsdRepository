@@ -1,0 +1,30 @@
+ISD Week 1 Exercise
+1. What is a code repository (often also called version control system) used for? 
+A code repository is a place to manage collections of information like all source code, related documents, repositories. All changes to these files are identified by a number or letter code this is known as revision. These revisions can be compared, restored and some of the file types can be merged
+2. Why is it advantageous to use a code repository? 
+Source code management, version control, code repository and revision control are all variations of a centrally managed hub for storing all your code and documentation.
+3. Describe the different “layers” of Software that exist on a typical computer and explain why there are different layers of software. 
+
+4. Describe what an algorithm is and explain why it is a useful “tool” to translate from a human level problem (we can think of) to a computer program. 
+
+5. Write an algorithm that describes how to make scrambled eggs, try to use control words, like IF, WHEN, UNTIL, WHILE, WAIT, AND, OR. 
+1. Beat the eggs FOR 30 seconds in a bowl UNTIL evenly coloured 
+2. Heat up a frying pan over medium heat UNTIL hot
+3. Melt some butter OR pour in sunflower oil in the frying pan
+4. Cook the eggs on the pan AND stir eggs WHILE cooking
+5. Serve the scrambled eggs
+6. Is Idle (the Python language shell) an Interpreter or an Compiler or both? Explain your answer.
+
+Practical work using Python
+1) Write a command in the Idle shell that says “Hello world” 
+print(“Hello world”)
+ 
+
+2) Write a program that produces the following output: Hello World I am in my ISD class right now
+print(“Hello world I am in my ISD class right now”)
+ 
+3) Write a program that asks the user for his/her name and produces an output like: Hi there, what is your name? >User input to be read< Hello (Users name) How are you?
+ 
+
+4) Write a program that asks for two numbers (Python has all the basic mathematical functions in place, like +,- etc.), adds them up and displays the result.
+ 
